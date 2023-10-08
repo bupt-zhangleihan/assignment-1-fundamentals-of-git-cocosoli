@@ -1,0 +1,5 @@
+import requests
+#url = 'https://en.wikipedia.org/wiki/Data_science'
+url = 'http://127.0.0.1:5500/1-Introduction/01-defining-data-science/Data%20science%20-%20Wikipedia.html'
+text = requests.get(url,timeout=500).content.decode('utf-8')
+print(text[:1000])
