@@ -1,0 +1,3 @@
+SELECT Airports.name,Cities.city,Cities.country
+FROM Cities
+    INNER JOIN Airports ON Cities.city_id = Airports.id
